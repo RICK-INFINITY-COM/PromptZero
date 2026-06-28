@@ -16,7 +16,7 @@ import os
 from typing import List, Tuple
 
 # ─── 配置 ───────────────────────────────────────────
-LEVEL = os.environ.get("PROMPT_CLEANER_LEVEL", "safe")  # safe | moderate | aggressive
+LEVEL = os.environ.get("PROMPT_CLEANER_LEVEL", "moderate")  # safe | moderate | aggressive
 
 
 # ─── 中文规则 ────────────────────────────────────────

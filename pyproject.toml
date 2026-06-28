@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptzero"
+version = "1.0.0"
+description = "Zero-token rule-based prompt cleaner for removing filler words before LLM calls."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "RICK-INFINITY-COM" }]
+keywords = ["prompt", "llm", "token", "preprocessor", "prompt-engineering", "hermes-agent"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Text Processing",
+]
+
+[project.scripts]
+promptzero = "promptzero.clean_prompt:main"
+
+[tool.setuptools.packages.find]
+include = ["promptzero*"]

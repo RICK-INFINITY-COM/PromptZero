@@ -1,0 +1,3 @@
+# Runtime has no third-party dependencies.
+# Optional, only for regenerating assets/demo.gif:
+pillow>=10.0.0
